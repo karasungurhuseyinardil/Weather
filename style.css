@@ -1,7 +1,5 @@
 *{margin:0; padding:0; box-sizing:border-box;}
 
-
-
 body{
     font-family:'montserat', sans-serif;
     color: #fff;
@@ -11,7 +9,6 @@ body{
     background-size: cover;
     height: 100vh;
 }
-
 
 .app{
     display: flex;
@@ -74,13 +71,8 @@ margin-bottom: 10px;
     text-shadow: 1px 3px rgba(0,0,0,.8);
 }
 .navbar {
-  height: 6vh;
-  width: 100%;
     overflow: hidden;
     background-color: black;
-    display:flex ;
-    flex-direction: row;
-    justify-content: space-around;
   }
   
   .navbar a {
@@ -143,7 +135,7 @@ margin-bottom: 10px;
     min-height: 30em;
     height: 100vh;
     position: relative;
-    background-image: url(assets/back.jpg);
+    background-image: url(assets/istanbul.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -185,5 +177,3 @@ margin-bottom: 10px;
 .image-fade {
   animation: imgFade 0.5s ease-in-out;
 }
-
-
