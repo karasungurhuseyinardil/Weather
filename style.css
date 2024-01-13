@@ -1,14 +1,17 @@
 *{margin:0; padding:0; box-sizing:border-box;}
 
+
+
 body{
     font-family:'montserat', sans-serif;
     color: #fff;
-    background-image: url('back.jpg');
+    background-image: url('assets/back.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+
 
 .app{
     display: flex;
@@ -70,3 +73,117 @@ margin-bottom: 10px;
     font-size: 24px;
     text-shadow: 1px 3px rgba(0,0,0,.8);
 }
+.navbar {
+  height: 6vh;
+  width: 100%;
+    overflow: hidden;
+    background-color: black;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgb(0, 102, 255);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .image-slider {
+    min-height: 30em;
+    height: 100vh;
+    position: relative;
+    background-image: url(assets/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+  }
+  
+  .image-slider * {
+    box-sizing: border-box;
+  }
+  .arrow-left,
+.arrow-right {
+  background: #fff;
+  position: absolute;
+  top: 40%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background: #000;
+  color: #fff;
+}
+
+.arrow-left {
+  left: 1em;
+}
+
+.arrow-right {
+  right: 1em;
+}
+
+.image-fade {
+  animation: imgFade 0.5s ease-in-out;
+}
+
+
